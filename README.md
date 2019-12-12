@@ -78,40 +78,61 @@ functions:
  
  functions:
  
- ●
  
- ●
+ ● public ComplexFunction () - this function creates a default Complex Function.
  
- ●
+ ●	public ComplexFunction (String o, function l, function r) - this function creates a Complex Function from string,function,function.
  
- ●
+ ● public ComplexFunction (Operation o, function l, function r) - this function creates a Complex Function from operation,function,function.
  
- ●
+ ● public ComplexFunction (function f) - this function creates a Complex Function from function.
  
- ●
+ ● public double f(double x) - this function return the f(x) value of a Complex Function.
  
+ ● public function initFromString(String s) - this function initialize a function from a string.
  
+ ●	public function copy() - this function copies a function.
  
+ ● public boolean equals(Object obj) - this function checks if a current Object is equal to a given one.
  
+ ● public void plus(function f1) - Add to this complex_function the f1 complex_function.
+ 
+ ● public void mul(function f1) - Multiply this complex_function with the f1 complex_function.
+ 
+ ●	public void div(function f1) - Divides this complex_function with the f1 complex_function.
+ 
+ ●	public void max(function f1) - Computes the maximum over this complex_function and the f1 complex_function.
+ 
+ ● public void min(function f1) - Computes the minimum over this complex_function and the f1 complex_function.
+ 
+ ● public void comp(function f1) - This method wrap the f1 complex_function with this function: this.f(f1(x)).
+ 
+ ● public function left() - returns the left side of the complex function - this side should always exists (should NOT be null).
+ 
+ ● public function right() - returns the right side of the complex function - this side might not exists (aka equals null).
+ 
+ ● public Operation getOp() - The complex_function oparation: plus, mul, div, max, min, comp.
+ 
+ ● public String toString() - this function printring the Complex Function.
+  
+  
+  
+  
  Functions_GUI Class: 
  
  this class represent graph of a Complex Function.
  
  functions:
  
- ●
+ ● public void initFromFile(String file) - Init a new collection of functions from a file
  
- ●
+ ● public void saveToFile(String file) - this fucntion saves to file.
  
- ●
+ ●	public void drawFunctions(int width, int height, Range rx, Range ry, int resolution) - Draws all the functions in the collection in a GUI window using the given parameters for the GUI windo and the range & resolution.
  
- ●
+ ●	public void drawFunctions(String json_file) - Draws all the functions in the collection in a GUI window using the given JSON file.
  
- ●
- 
- ●
- 
- 
+
  
  
  
